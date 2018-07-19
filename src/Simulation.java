@@ -1,20 +1,15 @@
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Simulation {
-    private ArrayList<Item> items;
-    private File file;
-    private Scanner scanner;
 
-    public Simulation(ArrayList<Item> items, File file, Scanner scanner) {
-        this.items = items;
-        this.file = file;
-        this.scanner = scanner;
+
+    public Simulation() {
+
     }
 
     public ArrayList<Item> loadItems(Scanner scanner) {
+        ArrayList<Item> items = new ArrayList<>();
         while(scanner.hasNextLine()) {
             String line = scanner.nextLine();
             items.add(new Item(line.substring(0, line.indexOf("=")), Integer.parseInt(line.substring(line.indexOf("=") + 1))));
@@ -22,7 +17,18 @@ public class Simulation {
         for (Item item : items) {
             System.out.println(item.name + " " + item.weight);
         }
-
         return items;
+    }
+
+    public ArrayList<U1> loadU1(ArrayList<Item> itemsArrayList) {
+        ArrayList<U1> u1ArrayList = new ArrayList<>();
+
+        return u1ArrayList;
+    }
+
+    public ArrayList<U2> loadU2(ArrayList<Item> itemsArrayList) {
+        ArrayList<U2> u2ArrayList = new ArrayList<>();
+
+        return u2ArrayList;
     }
 }
