@@ -25,16 +25,16 @@ public class Main {
         System.out.println("Phase 2 fleet U1 has " + fleetU1Phase2.size() + " rockets");
         System.out.println("Phase 2 fleet U2 has " + fleetU2Phase2.size() + " rockets");
 
-//        System.out.println("Simulation Phase 1 with U1 rockets START ---------");
-//        int totalBudgetOfPhase1U1 = simulation.runSimulation(fleetU1Phase1);
-//        System.out.println("Simulation Phase 1 with U1 rockets: budget = $" + totalBudgetOfPhase1U1 + " millions.");
-//
-//        System.out.println("Simulation Phase 2 with U1 rockets START ---------");
-//        int totalBudgetOfPhase2U1 = simulation.runSimulation(fleetU1Phase2);
-//        System.out.println("Simulation Phase 2 with U1 rockets: budget = $" + totalBudgetOfPhase2U1 + " millions.");
-//
-//        int totalBudgetOfU1 = totalBudgetOfPhase1U1 + totalBudgetOfPhase2U1;
-//        System.out.println("Simulation using the fleet of U1 rockets: total budget = $" + totalBudgetOfU1 + " millions");
+        System.out.println("Simulation Phase 1 with U1 rockets START ---------");
+        int totalBudgetOfPhase1U1 = simulation.runSimulation(fleetU1Phase1);
+        System.out.println("Simulation Phase 1 with U1 rockets: budget = $" + totalBudgetOfPhase1U1 + " millions.");
+
+        System.out.println("Simulation Phase 2 with U1 rockets START ---------");
+        int totalBudgetOfPhase2U1 = simulation.runSimulation(fleetU1Phase2);
+        System.out.println("Simulation Phase 2 with U1 rockets: budget = $" + totalBudgetOfPhase2U1 + " millions.");
+
+        int totalBudgetOfU1 = totalBudgetOfPhase1U1 + totalBudgetOfPhase2U1;
+        System.out.println("Simulation using the fleet of U1 rockets: total budget = $" + totalBudgetOfU1 + " millions");
 
         System.out.println("Simulation Phase 1 with U2 rockets START ---------");
         int totalBudgetOfPhase1U2 = simulation.runSimulation(fleetU2Phase1);

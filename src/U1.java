@@ -24,12 +24,14 @@ public class U1 extends Rocket {
 
     @Override
     public boolean launch() {
-        return (Math.random() < 0.5);
+        this.launchExplosionChance = launchExplosionRiskRate * ((double)cargoCarried / (double) cargoLimit);
+        return !(this.launchExplosionChance >= this.random);
     }
 
     @Override
     public boolean land() {
-        return (Math.random() < 0.5);
+        this.landingCrashChance = landingCrashRiskRate * ((double)cargoCarried / (double) cargoLimit);
+        return !(this.landingCrashChance >= this.random);
     }
 
     @Override

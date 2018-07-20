@@ -25,12 +25,13 @@ public class U2 extends Rocket{
     @Override
     public boolean launch() {
         this.launchExplosionChance = launchExplosionRiskRate * ((double)cargoCarried / (double) cargoLimit);
-        return (Math.random() < 0.5);
+        return !(this.launchExplosionChance >= this.random);
     }
 
     @Override
     public boolean land() {
-        return (Math.random() < 0.5);
+        this.landingCrashChance = landingCrashRiskRate * ((double)cargoCarried / (double) cargoLimit);
+        return !(this.landingCrashChance >= this.random);
     }
 
     @Override

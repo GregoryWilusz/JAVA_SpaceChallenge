@@ -148,7 +148,7 @@ public class Simulation {
                 fleet = launchNewRocket(fleet, i);
             }
         }
-        
+
         totalBudget = fleet.size() * rocket.rocketCost;
         return totalBudget;
     }
