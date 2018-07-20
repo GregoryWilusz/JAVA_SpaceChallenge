@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1b5d78-85c0-4d6f-ab36-c12c7e895d46" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SpaceChallenge/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SpaceChallenge/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SpaceChallenge/Rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SpaceChallenge/Rocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SpaceChallenge/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SpaceChallenge/Simulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SpaceChallenge/SpaceShip.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SpaceChallenge/SpaceShip.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SpaceChallenge/U1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SpaceChallenge/U1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SpaceChallenge/U2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SpaceChallenge/U2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phase-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/phase-1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/U1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/U1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/U2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/U2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="504">
+              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -38,27 +28,10 @@
       <file leaf-file-name="Simulation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Simulation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+            <state relative-caret-position="238">
+              <caret line="56" column="56" lean-forward="true" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rocket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rocket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
-              <folding>
-                <element signature="e#86#87#0" expanded="true" />
-                <element signature="e#114#115#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,6 +77,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cargoCarried</find>
+      <find>cargoCarr</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -115,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/U1.java" />
         <option value="$PROJECT_DIR$/src/U2.java" />
         <option value="$PROJECT_DIR$/src/Rocket.java" />
+        <option value="$PROJECT_DIR$/phase-1.txt" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Simulation.java" />
       </list>
@@ -220,12 +200,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532002302610</updated>
-      <workItem from="1532002304677" duration="21084000" />
+      <workItem from="1532002304677" duration="23270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21084000" />
+    <option name="totallyTimeSpent" value="23270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -241,7 +221,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -283,9 +263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phase-1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SpaceShip.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -312,21 +289,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Rocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
-          <folding>
-            <element signature="e#86#87#0" expanded="true" />
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/U1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
@@ -341,17 +303,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/phase-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Rocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="43" column="74" selection-start-line="43" selection-start-column="74" selection-end-line="43" selection-end-column="74" />
+          <folding>
+            <element signature="e#86#87#0" expanded="true" />
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+            <element signature="e#1323#1324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="504">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="56" column="56" lean-forward="true" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

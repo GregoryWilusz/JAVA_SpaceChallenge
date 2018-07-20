@@ -13,7 +13,6 @@ public class Simulation {
 
         String line;
         String fileName = "";
-        int sumOfAllItems = 0;
 
         try {
             if (phaseNumber == 1) {
@@ -36,16 +35,12 @@ public class Simulation {
 
                 item.name = line.substring(0, indexOfSeparator);
                 item.weight = Integer.parseInt(line.substring(indexOfSeparator + 1));
-                sumOfAllItems += item.weight;
                 items.add(item);
             }
             scanner.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-            System.out.println(sumOfAllItems);
-
 
         return items;
     }
@@ -58,9 +53,10 @@ public class Simulation {
         ArrayList<U1> fleetU1 = new ArrayList<>();
 
         int i = 0;
-        while (i < (items.size() - 1)) {
+        while (i < (items.size()-1)) {
             U1 u1 = new U1();
             while (u1.currentRocketWeight <= u1.rocketMaxWeight) {
+                // Extremely heavy item case (human mistake)
                 if(items.get(i).weight > u1.cargoLimit) {
                     System.out.println("File phase-1.txt item " + items.get(i).name + " has weight " + items.get(i).weight
                             + "which is heavier than cargo limit of U1 rocket -> " + u1.cargoLimit);
@@ -68,6 +64,7 @@ public class Simulation {
                     System.exit(1);
                 }
 
+                // Carrying items
                 if(u1.canCarry(items.get(i))) { //  can carry item i ?
                     u1.carry(items.get(i));
                     i++; // point next item to load
@@ -83,15 +80,38 @@ public class Simulation {
                 }
             }
         }
-        System.out.println(fleetU1);
         return fleetU1;
     }
 
     public ArrayList<U2> loadU2(ArrayList<Item> items) {
         ArrayList<U2> fleetU2 = new ArrayList<>();
 
-        
+        int i = 0;
+        while (i < (items.size() - 1)) {
+            U2 u2 = new U2();
+            while(u2.currentRocketWeight <= u2.rocketMaxWeight) {
+                if(items.get(i).weight > u2.cargoLimit) {
+                    System.out.println("File phase-2.txt item " + items.get(i).name + " has weight " + items.get(i).weight
+                            + "which is heavier than cargo limit of U1 rocket -> " + u2.cargoLimit);
+                    System.out.println("Program stop");
+                    System.exit(1);
+                }
 
+                if(u2.canCarry(items.get(i))) {
+                    u2.carry(items.get(i));
+                    i++;
+                    if(i >= items.size()) { // Checks if we are not out of items array bound
+                        u2.rocketStatus = "loaded";
+                        fleetU2.add(u2);
+                        break;
+                    }
+                } else {
+                    u2.rocketStatus = "loaded";
+                    fleetU2.add(u2);
+                    break;
+                }
+            }
+        }
         return fleetU2;
     }
 }
