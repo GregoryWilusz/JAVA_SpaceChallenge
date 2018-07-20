@@ -114,4 +114,68 @@ public class Simulation {
         }
         return fleetU2;
     }
+
+    /*
+    A method takes an ArrayList of Rockets and calls launch and land methods for each of the rockets in the ArrayList.
+    Every time a rocket explodes or crashes (i.e if launch or land return false) it will have to send that rocket again.
+    All while keeping track of the total budget required to send each rocket safely to Mars. runSimulation then returns
+    the total budget required to send all rockets (including the crashed ones).
+     */
+
+    public int runSimulation(ArrayList fleet) {
+
+        int totalBudget;
+
+        Rocket rocket = new Rocket(); // create new object of type Rocket for getting U1 or U2
+        int rocketCounter = 1;
+        for (int i = 0; i < fleet.size(); i++) { // repeat until all fleet landed on Mars
+            rocket = (Rocket) fleet.get(i); // get object of type U1 or U2 in common object Rocket
+            if(rocket.launch()) {
+                System.out.println("Rocket " + rocketCounter + " successfully launched.");
+                rocket.rocketStatus = "launched";
+                if (rocket.land()) {
+                    System.out.println("Rocket " + rocketCounter + " successfully landed.");
+                    rocket.rocketStatus = "landed";
+                    rocketCounter++;
+                } else {
+                    System.out.println("Rocket " + rocketCounter + " crashed at landing.");
+                    rocket.rocketStatus = "crashed";
+                    fleet = launchNewRocket(fleet, i);
+                }
+            } else {
+                System.out.println("Rocket " + rocketCounter + " exploded at launching. Repeat launch with the same cargo.");
+                rocket.rocketStatus = "exploded";
+                fleet = launchNewRocket(fleet, i);
+            }
+        }
+        
+        totalBudget = fleet.size() * rocket.rocketCost;
+        return totalBudget;
+    }
+
+    private ArrayList<Rocket> launchNewRocket(ArrayList fleet, int rocketIndex) {
+
+        Rocket oldRocketCopy;
+        oldRocketCopy = (Rocket) fleet.get(rocketIndex);
+
+        if (oldRocketCopy instanceof U1) {
+            U1 newU1Rocket = new U1();
+            newU1Rocket.rocketStatus = "loaded";
+            newU1Rocket.cargoCarried = oldRocketCopy.cargoCarried;
+            newU1Rocket.currentRocketWeight = oldRocketCopy.currentRocketWeight;
+            fleet.add(rocketIndex + 1, newU1Rocket);
+        } else if (oldRocketCopy instanceof U2) {
+            U2 newU2Rocket = new U2();
+            newU2Rocket.rocketStatus = "loaded";
+            newU2Rocket.cargoCarried = oldRocketCopy.cargoCarried;
+            newU2Rocket.currentRocketWeight = oldRocketCopy.currentRocketWeight;
+            fleet.add(rocketIndex + 1, newU2Rocket);
+        } else {
+            System.out.println("Cannot run simulation, unknown rocket model.");
+            System.out.println("Program stop");
+            System.exit(1);
+        }
+
+        return fleet;
+    }
 }
